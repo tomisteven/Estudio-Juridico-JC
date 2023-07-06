@@ -1,0 +1,142 @@
+.about-container {
+    position: relative;
+    font-family: 'Muli', sans-serif;
+    max-width: 1136px;
+    margin: 0px auto 139.25px auto;
+  }
+
+  .about-container .dotted {
+    position: absolute;
+    background-image: url('../../assets/dottedd.png');
+    background-size: cover;
+    top: 114px;
+    left: -66px;
+    width: 66px;
+    height: 91px;
+  }
+
+  .about-container .dotted+.dTwo {
+    top: unset;
+    bottom: 315px;
+    left: 506px;
+  }
+
+  .about-container .dotted+.dThree {
+    top: unset;
+    bottom: -52px;
+    left: -14px;
+  }
+
+  .about-container h2 {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .about-container .about-phrase {
+    max-width: 271px;
+    color: #666666;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .about-content {
+    position: relative;
+    display: flex;
+    margin-top: 117px;
+    z-index: 100;
+  }
+
+  .about-content .blue-shadow {
+    position: absolute;
+    width: 550px;
+    height: 350px;
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    border-radius: unset;
+  }
+
+  .about-content .about-image {
+    width: 550px;
+    max-height: 350px;
+    border-radius: 10px;
+    z-index: 100;
+  }
+
+  .about-content .about-p {
+    max-width: 520px;
+    text-align: start;
+    margin-left: 46px;
+    padding-top: 39px;
+  }
+
+  .about-content .about-p h3 {
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 22px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+
+  .about-content .about-p p {
+    font-size: 16px;
+    color: #666666;
+    line-height: 156%;
+    text-align: start;
+  }
+
+  .about-content .blue-border {
+    position: absolute;
+    width: 550px;
+    height: 230px;
+    border-radius: 10px;
+    background-color: #297EFF;
+    opacity: 0.15;
+    bottom: -20px;
+    left: -20px;
+    z-index: -1;
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .about-container {
+      margin-bottom: -60px;
+      margin: 0px auto 139.25px auto;
+      padding: 0 20px;
+    }
+    .about-container .dotted {
+      display: none;
+    }
+    .about-container h2 {
+      font-size: 24px;
+    }
+    .about-container .about-phrase {
+      max-width: 100%;
+      font-size: 14px;
+    }
+    .about-content {
+      flex-direction: column;
+      margin-top: 0;
+    }
+    .about-content .about-image {
+      width: 100%;
+      max-height: 100%;
+      border-radius: 10px;
+    }
+    .about-content .about-p {
+      margin-top: 25px;
+      margin-left: 0;
+      padding-top: 0;
+    }
+    .about-content .about-p h3 {
+      font-size: 18px;
+    }
+    .about-content .about-p p {
+      font-size: 14px;
+    }
+    .about-content .blue-border {
+      display: none;
+    }
+  }

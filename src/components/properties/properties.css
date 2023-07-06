@@ -1,0 +1,85 @@
+.properties-container {
+    font-family: 'Muli', sans-serif;
+    background-color: white;
+    width: 1136px;
+    margin: 0 auto;
+    height: 1181px;
+  }
+
+  .properties-container h2 {
+    margin: 0;
+    margin-bottom: 22px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .properties-container p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .properties-container .cards-container {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  .properties-container .button-container {
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    width: 70%;
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .properties-container {
+      width: 100%;
+      height: 100%;
+      padding: 0 20px;
+      margin: -50px 0 0 0;
+    }
+
+    .properties-container h2 {
+      font-size: 24px;
+    }
+
+    .properties-container p {
+      font-size: 16px;
+    }
+
+    .properties-container .cards-container {
+      margin-top: 25px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .properties-container .button-container {
+      width: 100%;
+      margin-top: 25px;
+      margin-left: 0;
+      margin-right: 0;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .properties-container .button-container Button {
+      width: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }

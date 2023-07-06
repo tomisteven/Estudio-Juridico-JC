@@ -1,0 +1,234 @@
+footer {
+    max-height: 659px;
+    background: #ebeef3;
+    color: var(--gray1);
+    padding-bottom: 40px;
+    border-radius: 70px;
+    font-family: "Muli", sans-serif;
+  }
+
+  /* Footer navbar */
+  .footer-navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    padding-top: 10px;
+  }
+
+  .footer-navbar img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .footer-name {
+    color: var(--gray1);
+    text-decoration: none;
+    flex: 0 0 250px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .socials {
+    flex: 0 0 370px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .socials .follow-us {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    flex: 0 0 220px;
+    color: var(--gray1);
+    text-decoration: none;
+  }
+
+  .socials .media {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 170px;
+  }
+
+  .socials .media a {
+    font-size: 30px;
+    color: var(--gray1);
+  }
+
+  /* Footer Options */
+  .options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -30px;
+  }
+
+  .options img {
+    width: 420px;
+    height: 420px;
+    border-radius: 20px;
+    position: relative;
+    top: -70px;
+  }
+
+  .options .column-f {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .options .menu {
+    flex: 0 0 600px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .options .menu h3 {
+    margin: 0 0 37px 0;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .options .menu ul {
+    padding: 0;
+  }
+
+  .options .menu li {
+    list-style: none;
+    margin-bottom: 23px;
+  }
+
+  .options .menu li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--gray1);
+  }
+
+  .options .menu li:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .options .menu .popular {
+    width: 250px;
+  }
+
+  .options .menu .hompress {
+    width: 250px;
+  }
+
+  .options .menu .quick {
+    width: 250px;
+  }
+
+  .options .form {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+  }
+
+  .options .form input {
+    width: 100%;
+    height: 56px;
+    margin-bottom: 13px;
+    padding-left: 26px;
+    border: unset;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+
+  .options .form input:last-of-type {
+    margin-bottom: 0;
+    padding-left: 0;
+    background-color: var(--blue);
+    color: white;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .options .form input:last-of-type:hover {
+    cursor: pointer;
+    background-color: #2365c8;
+  }
+
+  /* Footer copyright */
+  .footer .copyright {
+    text-align: center;
+    margin-bottom: 11px;
+    font-size: 12px;
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 520px) {
+    footer {
+      max-height: 1000px;
+    }
+
+    .footer-navbar {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer-navbar img {
+      margin-bottom: -180px;
+    }
+
+    .footer-navbar .socials {
+      height: 100px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+    }
+
+    .options {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .options img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 0;
+    }
+
+    .options .img-map {
+      width: 350px;
+    }
+
+    .options .menu {
+      margin-top: -140px;
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    .options .menu .popular {
+      width: 100%;
+      margin: auto;
+      position: relative;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .options .menu .hompress {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 55px;
+    }
+
+    .options .menu .quick {
+      width: 100%;
+      margin: auto;
+      margin-bottom: 25px;
+    }
+
+    .options .menu .column-f {
+      width: 100%;
+      margin-bottom: 25px;
+      text-align: center;
+      height: 300px;
+    }
+  }

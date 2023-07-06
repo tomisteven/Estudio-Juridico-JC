@@ -1,0 +1,18 @@
+
+button{
+    margin-top: 22px;
+    width: 200px;
+    height: 53px;
+    border: unset;
+    border-radius: 10px;
+    background-color: $blue;
+    color: white;
+    font-family: 'Muli',sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+button:hover{
+    cursor: pointer;
+}
