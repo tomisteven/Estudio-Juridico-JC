@@ -1,5 +1,6 @@
 import React from "react";
 //import "./Footer.scss";
+import { Icon } from "semantic-ui-react";
 import "./footer.css";
 import logo from "../../assets/logo.png";
 import map from "../../assets/map.jpg";
@@ -15,14 +16,14 @@ const Footer = () => {
               Redes Sociales
             </a>
             <div className="media">
-              <a href="!#">
-                <ion-icon name="logo-facebook"></ion-icon>
+              <a href="https://www.facebook.com/jorgecancioabogado" target="_blank" rel="noreferrer">
+                <Icon color="blue" size="large" name="facebook" />
               </a>
-              <a href="!#">
-                <ion-icon name="logo-twitter"></ion-icon>
+              <a target="_blank" rel="noreferrer" href="https://www.instagram.com/cancio_jorge/?hl=es-la">
+                <Icon size="large" color="orange" name="instagram" />
               </a>
-              <a href="!#">
-                <ion-icon name="logo-instagram"></ion-icon>
+              <a target="_blank" rel="noreferrer" href="https://twitter.com/i/flow/login?redirect_after_login=%2Fdrjorgecancio%3Flang%3Des">
+                <Icon size="large" color="teal" name="twitter" />
               </a>
             </div>
           </div>
@@ -92,7 +93,7 @@ const Footer = () => {
         </div>
 
         <p className="copyright">
-          Diseñado y Realizado por ® Digital Code - 2023{" "}
+          Diseñado y Realizado por ® <a href="https://tomsteven.netlify.app" target="_blank" rel="noreferrer">Digital Code</a> - 2023{" "}
         </p>
       </div>
     </footer>
