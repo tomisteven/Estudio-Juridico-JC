@@ -228,6 +228,23 @@
     width: 95%;
     margin: 20px auto;
   }
+  .button{
+    width: 150px;
+    position: relative;
+    right: -5px;
+  }
+  .cont-butons{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+  .button-v2{
+    position: relative;
+    left: -5px;
+  }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1840px) {

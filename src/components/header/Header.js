@@ -14,7 +14,7 @@ const Header = () => {
           <div className="top-bar">
             <img className="img-header-logo" src={logo} alt="" />
             <a className="title" href="!#">
-              Estudio Juridico Integral
+              Estudio Jurídico Integral
             </a>
             <div className="links">
               <a href="!#">Inicio</a>
@@ -40,6 +40,7 @@ const Header = () => {
             Confía en nosotros para obtener resultados favorables. ¡Contáctanos
             hoy mismo para una consulta!
           </p>
+          <div class="cont-butons">
           <Button
             onClick={() =>
               window.open(
@@ -47,11 +48,19 @@ const Header = () => {
                 "_blank"
               )
             }
-            className="button"
+            className="button-v2"
             color="green"
           >
             <Icon size="big" name="whatsapp" /> Contactanos
           </Button>
+          <Button
+            onClick={() => window.open("https://www.facebook.com/jorgecancioabogado/?locale=es_LA", "_blank")}
+            className="button"
+            color="blue"
+          >
+            <Icon size="big" name="facebook" /> Facebook
+          </Button>
+          </div>
         </div>{" "}
       </div>
     </header>
