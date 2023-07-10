@@ -1,8 +1,11 @@
 footer {
-  max-height: 659px;
+  max-height: 689px;
   background: #ebeef3;
   color: var(--gray1);
   padding-bottom: 40px;
+  width: 90%;
+  margin: auto;
+  padding: 0px 45px 60px 45px;
   border-radius: 70px;
   font-family: "Muli", sans-serif;
 }

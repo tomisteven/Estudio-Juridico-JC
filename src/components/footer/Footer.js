@@ -16,13 +16,25 @@ const Footer = () => {
               Redes Sociales
             </a>
             <div className="media">
-              <a href="https://www.facebook.com/jorgecancioabogado" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.facebook.com/jorgecancioabogado"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Icon color="blue" size="large" name="facebook" />
               </a>
-              <a target="_blank" rel="noreferrer" href="https://www.instagram.com/cancio_jorge/?hl=es-la">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.instagram.com/cancio_jorge/?hl=es-la"
+              >
                 <Icon size="large" color="orange" name="instagram" />
               </a>
-              <a target="_blank" rel="noreferrer" href="https://twitter.com/i/flow/login?redirect_after_login=%2Fdrjorgecancio%3Flang%3Des">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://twitter.com/i/flow/login?redirect_after_login=%2Fdrjorgecancio%3Flang%3Des"
+              >
                 <Icon size="large" color="teal" name="twitter" />
               </a>
             </div>
@@ -65,12 +77,10 @@ const Footer = () => {
                 <h3>Contacto</h3>
                 <ul>
                   <li>
-                    {" "}
                     <a href="!#"> +54 11 5754-1353 </a>{" "}
                   </li>
                   <li>
-                    {" "}
-                    <a href="!#"> Estudiojuridico@hotmail.com </a>{" "}
+                    <a href="!#"> drcancio@hotmail.com </a>{" "}
                   </li>
                 </ul>
               </div>
@@ -93,7 +103,15 @@ const Footer = () => {
         </div>
 
         <p className="copyright">
-          Diseñado y Realizado por ® <a href="https://tomsteven.netlify.app" target="_blank" rel="noreferrer">Digital Code</a> - 2023{" "}
+          Diseñado y Realizado por ®{" "}
+          <a
+            href="https://tomsteven.netlify.app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Digital Code
+          </a>{" "}
+          - 2023{" "}
         </p>
       </div>
     </footer>
