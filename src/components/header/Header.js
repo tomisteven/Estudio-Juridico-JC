@@ -6,17 +6,19 @@ import logo from "../../assets/logo.png";
 
 const Header = () => {
   const scollEvent = (e) => {
-    const position = window.pageYOffset;
-    const header = document.querySelector(".header-navbar");
-    const links = document.querySelectorAll(".links a");
-    const title = document.querySelector(".title");
+    const widthWindow = window.innerWidth;
+    if(widthWindow > 1000){
+      const position = window.pageYOffset;
+      const header = document.querySelector(".header-navbar");
+      const links = document.querySelectorAll(".links a");
+      const title = document.querySelector(".title");
 
-    if (position > 100) {
-      header.classList.add("header-scroll");
-  title.classList.add("title-c");
-      links.forEach((link) => {
-        link.classList.remove("l-color");
-        link.classList.add("links-color");
+      if (position > 100) {
+        header.classList.add("header-scroll");
+        title.classList.add("title-c");
+        links.forEach((link) => {
+          link.classList.remove("l-color");
+          link.classList.add("links-color");
       });
     } else {
       header.classList.remove("header-scroll");
@@ -26,7 +28,10 @@ const Header = () => {
         link.classList.add("l-color");
       });
     }
-  };
+
+  }
+}
+
 
   window.addEventListener("scroll", scollEvent);
 
