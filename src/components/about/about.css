@@ -63,7 +63,7 @@
     width: 550px;
     max-height: 350px;
     border-radius: 10px;
-    z-index: 100;
+    z-index: 1;
   }
 
   .about-content .about-p {

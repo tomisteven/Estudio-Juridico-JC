@@ -5,26 +5,51 @@ import "./Header.css";
 import logo from "../../assets/logo.png";
 
 const Header = () => {
+  const scollEvent = (e) => {
+    const position = window.pageYOffset;
+    const header = document.querySelector(".header-navbar");
+    const links = document.querySelectorAll(".links a");
+    const title = document.querySelector(".title");
+
+    if (position > 100) {
+      header.classList.add("header-scroll");
+  title.classList.add("title-c");
+      links.forEach((link) => {
+        link.classList.remove("l-color");
+        link.classList.add("links-color");
+      });
+    } else {
+      header.classList.remove("header-scroll");
+      title.classList.remove("title-c");
+      links.forEach((link) => {
+        link.classList.remove("links-color");
+        link.classList.add("l-color");
+      });
+    }
+  };
+
+  window.addEventListener("scroll", scollEvent);
+
   return (
-    <header>
+    <header id="inicio">
       <div className="blue-shadow"></div>
       <div className="round-pic"></div>
       <div className="header-container">
         <div className="header-navbar">
           <div className="top-bar">
             <img className="img-header-logo" src={logo} alt="" />
-            <a className="title" href="!#">
+            <a className="title" href="#inicio">
               Estudio Jurídico Integral
             </a>
             <div className="links">
-              <a href="!#">Inicio</a>
-              <a href="#about">Nosotros</a>
-              <a href="#casos">Casos</a>
-              <a href="#esp">Especializaciones</a>
-              <a href="#abogados">Abogados</a>
+              <a className="l-color" href="#inicio">Inicio</a>
+              <a className="l-color" href="#about">Nosotros</a>
+              <a className="l-color" href="#casos">Casos</a>
+              <a className="l-color" href="#esp">Especializaciones</a>
+              <a className="l-color" href="#abogados">Abogados</a>
             </div>
           </div>
-        </div>{" "}
+        </div>
         {/*  Navbar */}
         <div className="message">
           <h1>Dr Jorge Cancio & Asociados</h1>
@@ -41,25 +66,30 @@ const Header = () => {
             hoy mismo para una consulta!
           </p>
           <div class="cont-butons">
-          <Button
-            onClick={() =>
-              window.open(
-                "https://api.whatsapp.com/send?phone=+5491157541353&text=Hola!%20Quiero%20agendar%20una%20cita%20con%20el%20Dr.%20Cancio%20&%20Asociados",
-                "_blank"
-              )
-            }
-            className="button-v2"
-            color="green"
-          >
-            <Icon size="big" name="whatsapp" /> Contactanos
-          </Button>
-          <Button
-            onClick={() => window.open("https://www.facebook.com/jorgecancioabogado/?locale=es_LA", "_blank")}
-            className="button"
-            color="blue"
-          >
-            <Icon size="big" name="facebook" /> Facebook
-          </Button>
+            <Button
+              onClick={() =>
+                window.open(
+                  "https://api.whatsapp.com/send?phone=+5491157541353&text=Hola!%20Quiero%20agendar%20una%20cita%20con%20el%20Dr.%20Cancio%20&%20Asociados",
+                  "_blank"
+                )
+              }
+              className="button-v2"
+              color="green"
+            >
+              <Icon size="big" name="whatsapp" /> Contactanos
+            </Button>
+            <Button
+              onClick={() =>
+                window.open(
+                  "https://www.facebook.com/jorgecancioabogado/?locale=es_LA",
+                  "_blank"
+                )
+              }
+              className="button"
+              color="blue"
+            >
+              <Icon size="big" name="facebook" /> Facebook
+            </Button>
           </div>
         </div>{" "}
       </div>

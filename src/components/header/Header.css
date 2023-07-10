@@ -1,7 +1,8 @@
 .header-container {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   height: 611px;
-  width: 1136px;
+  width: 100%;
+  padding-left: 150px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -36,6 +37,37 @@
   justify-content: space-between;
   margin-top: 38px;
 }
+.header-scroll{
+  position: fixed;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 20px;
+  background-color: #161b2292;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.326);
+  transition: all 0.3s ease-in-out;
+}
+
+.links-color{
+  font-family: "Muli", sans-serif;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  margin-right: 40px;
+}
+.l-color {
+  font-family: "Muli", sans-serif;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  margin-right: 40px;
+}
 
 .header-navbar .contact-us {
   margin-top: 0;
@@ -60,21 +92,22 @@
   justify-content: space-between;
 }
 
-.header-navbar .top-bar .title {
+.title {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   color: rgb(0, 82, 0);
   font-size: 1rem;
   font-weight: 600;
 }
-
-.header-navbar .top-bar .links a {
-  font-family: "Muli", sans-serif;
+.title-c {
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
-  color: gray;
+  color: rgb(255, 255, 255);
   font-size: 1rem;
-  margin-right: 40px;
+  font-weight: 700;
 }
+
+
 
 .header-navbar .top-bar .links a:last-of-type {
   margin-right: 0;
@@ -133,7 +166,7 @@
   .round-pic {
     display: none;
   }
-  .blue-shadow{
+  .blue-shadow {
     display: none;
   }
   header {
@@ -228,12 +261,12 @@
     width: 95%;
     margin: 20px auto;
   }
-  .button{
+  .button {
     width: 150px;
     position: relative;
     right: -5px;
   }
-  .cont-butons{
+  .cont-butons {
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -241,7 +274,7 @@
     align-items: center;
     flex-direction: row;
   }
-  .button-v2{
+  .button-v2 {
     position: relative;
     left: -5px;
   }
