@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./articles.css";
-import article from "../../assets/article.webp";
+//import article from "../../assets/article.webp";
 import article2 from "../../assets/article2.jpg";
 import article3 from "../../assets/article3.jpg";
 import { Button, Icon, Rating } from "semantic-ui-react";
-import { act } from "react-dom/test-utils";
+
 
 export default function Articles() {
   const articles = [
@@ -82,7 +82,7 @@ export default function Articles() {
     },
   ];
   const [articleActive, setArticleActive] = useState(articles[0]);
-  const [classActive, setClassActive] = useState("article-active");
+ // const [classActive, setClassActive] = useState("article-active");
 
   const handleArticle = (dir) => {
     if(dir){

@@ -6,7 +6,7 @@ import Header from './components/header/Header'
 import Properties from './components/properties/Properties';
 import HowItWork from './components/how-it-work/How-it-work';
 import Testmonials from './components/testimonials/testimonials';
-import Articles from './components/articles/Articles.js';
+/* import Articles from './components/articles/Articles.js'; */
 
 function App() {
   return (
