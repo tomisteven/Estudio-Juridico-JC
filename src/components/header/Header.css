@@ -163,6 +163,15 @@
   cursor: pointer;
 }
 
+.cont-butons {
+  width: 80%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .round-pic {
     display: none;

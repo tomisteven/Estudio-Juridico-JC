@@ -87,10 +87,25 @@ const Header = () => {
               }
               className="button-v2"
               color="green"
+              size="tiny"
             >
-              <Icon size="big" name="whatsapp" /> Contactanos
+              <Icon size="large" name="whatsapp" /> Contactanos
             </Button>
             <Button
+            size="tiny"
+              onClick={() =>
+                window.open(
+                  "https://goo.gl/maps/Z2TEzJ2D4Gb8jMiH6",
+                  "_blank"
+                )
+              }
+              className="button"
+              color="orange"
+            >
+              <Icon size="large" name="location arrow" /> Ubicacion
+            </Button>
+            <Button
+            size="tiny"
               onClick={() =>
                 window.open(
                   "https://www.facebook.com/jorgecancioabogado/?locale=es_LA",
@@ -100,7 +115,7 @@ const Header = () => {
               className="button"
               color="blue"
             >
-              <Icon size="big" name="facebook" /> Facebook
+              <Icon size="large" name="facebook" /> Facebook
             </Button>
           </div>
         </div>
