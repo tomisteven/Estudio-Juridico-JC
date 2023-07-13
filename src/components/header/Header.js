@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Icon } from "semantic-ui-react";
+import { Button} from "semantic-ui-react";
 //import "./Header.scss";
 import "./Header.css";
 import logo from "../../assets/logo.webp";
@@ -78,45 +78,34 @@ const Header = () => {
             hoy mismo para una consulta!
           </p>
           <div class="cont-butons">
-            <Button
-              onClick={() =>
-                window.open(
-                  "https://api.whatsapp.com/send?phone=+5491157541353&text=Hola!%20Quiero%20agendar%20una%20cita%20con%20el%20Dr.%20Cancio%20&%20Asociados",
-                  "_blank"
-                )
-              }
-              className="button-v2"
+          <Button
+              size=""
+              className="btn-w"
+              icon="whatsapp"
               color="green"
-              size="tiny"
-            >
-              <Icon size="large" name="whatsapp" /> Contactanos
-            </Button>
-            <Button
-            size="tiny"
               onClick={() =>
-                window.open(
-                  "https://goo.gl/maps/Z2TEzJ2D4Gb8jMiH6",
-                  "_blank"
-                )
+                window.open("https://goo.gl/maps/r383EhBJgmErtzyi6", "_blank")
               }
-              className="button"
-              color="orange"
-            >
-              <Icon size="large" name="location arrow" /> Ubicacion
-            </Button>
+            />
             <Button
-            size="tiny"
+              icon="location arrow"
+              className="btn-g"
+              color="orange"
+              onClick={() =>
+                window.open("https://goo.gl/maps/r383EhBJgmErtzyi6", "_blank")
+              }
+            />
+            <Button
+              icon="facebook"
+              color="blue"
+              className="btn-f"
               onClick={() =>
                 window.open(
                   "https://www.facebook.com/jorgecancioabogado/?locale=es_LA",
                   "_blank"
                 )
               }
-              className="button"
-              color="blue"
-            >
-              <Icon size="large" name="facebook" /> Facebook
-            </Button>
+            />
           </div>
         </div>
       </div>
@@ -125,3 +114,10 @@ const Header = () => {
 };
 
 export default Header;
+
+/* onClick={() =>
+                window.open(
+                  "https://api.whatsapp.com/send?phone=+5491157541353&text=Hola!%20Quiero%20agendar%20una%20cita%20con%20el%20Dr.%20Cancio%20&%20Asociados",
+                  "_blank"
+                )
+              } */
