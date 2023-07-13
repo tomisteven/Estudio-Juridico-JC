@@ -10,7 +10,7 @@ const Card = ({ pic, data, link, desc }) => {
       <div className="card-body">
         <div className="card-content">
           <a href="!#">
-            <img src={user} alt="user" />
+            <img className="img_user_icon" src={user} alt="user" />
             <span>Dr Jorge Cancio</span>
           </a>
           <h4>

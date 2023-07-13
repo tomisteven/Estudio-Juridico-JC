@@ -7,7 +7,7 @@ const TestimonialA = ({ photo, name, esp, text }) => {
   return (
     <div className="testimonial1-container">
       <div className="text1-container">
-        <img src={quote1} alt="quote" />
+        <img className="quote" src={quote1} alt="quote" />
         <p>
           {text}
         </p>

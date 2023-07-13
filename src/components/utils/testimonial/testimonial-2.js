@@ -7,7 +7,7 @@ const TestimonialB  = () => {
     return (
         <div className="testimonial-container">
             <div className="text-container">
-                <img src={quote} alt="quote"/>
+                <img className='quote' src={quote} alt="quote"/>
                 <p>
                 En nuestro estudio jurídico, nos enorgullece ofrecer una representación legal excepcional, buscando la justicia y protegiendo los derechos de nuestros clientes con pasión y experiencia.
                 </p>

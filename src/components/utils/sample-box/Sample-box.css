@@ -18,7 +18,10 @@
     justify-content: left;
     margin-bottom: 28px;
   }
-
+.icon-container img{
+    width: 25px;
+    height: 25px;
+}
   .box .box-title .icon-container {
     width: 44px;
     height: 44px;

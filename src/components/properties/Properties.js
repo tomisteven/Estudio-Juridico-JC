@@ -1,6 +1,6 @@
 import React from "react";
 //import "./Properties.scss";
-import "./properties.css"
+import "./properties.css";
 import { Button, Icon } from "semantic-ui-react";
 
 import Card from "../utils/card/card";

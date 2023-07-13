@@ -2,6 +2,10 @@
   width: 477px;
   height: 400px;
 }
+.text-container .quote{
+  width: 60px;
+  height: 60px;
+}
 
 .testimonial-container .text-container {
   position: relative;
