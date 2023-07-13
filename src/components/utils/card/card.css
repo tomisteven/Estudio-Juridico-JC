@@ -126,4 +126,8 @@
       padding: 0 20px;
       margin-bottom: 25px;
     }
+    .card .card-content p{
+      font-size: 13px;
+      line-height: 20px;
+    }
   }
