@@ -7,7 +7,7 @@ import logo from "../../assets/logo.webp";
 const Header = () => {
   const scollEvent = (e) => {
     const widthWindow = window.innerWidth;
-    if(widthWindow > 1000){
+    if (widthWindow > 1000) {
       const position = window.pageYOffset;
       const header = document.querySelector(".header-navbar");
       const links = document.querySelectorAll(".links a");
@@ -19,19 +19,17 @@ const Header = () => {
         links.forEach((link) => {
           link.classList.remove("l-color");
           link.classList.add("links-color");
-      });
-    } else {
-      header.classList.remove("header-scroll");
-      title.classList.remove("title-c");
-      links.forEach((link) => {
-        link.classList.remove("links-color");
-        link.classList.add("l-color");
-      });
+        });
+      } else {
+        header.classList.remove("header-scroll");
+        title.classList.remove("title-c");
+        links.forEach((link) => {
+          link.classList.remove("links-color");
+          link.classList.add("l-color");
+        });
+      }
     }
-
-  }
-}
-
+  };
 
   window.addEventListener("scroll", scollEvent);
 
@@ -47,15 +45,24 @@ const Header = () => {
               Estudio Jurídico Integral
             </a>
             <div className="links">
-              <a className="l-color" href="#inicio">Inicio</a>
-              <a className="l-color" href="#about">Nosotros</a>
-              <a className="l-color" href="#casos">Casos</a>
-              <a className="l-color" href="#esp">Especializaciones</a>
-              <a className="l-color" href="#abogados">Abogados</a>
+              <a className="l-color" href="#inicio">
+                Inicio
+              </a>
+              <a className="l-color" href="#about">
+                Nosotros
+              </a>
+              <a className="l-color" href="#casos">
+                Casos
+              </a>
+              <a className="l-color" href="#esp">
+                Especializaciones
+              </a>
+              <a className="l-color" href="#abogados">
+                Abogados
+              </a>
             </div>
           </div>
         </div>
-        {/*  Navbar */}
         <div className="message">
           <h1>Estudio Juridíco Dr Jorge Cancio & Asociados</h1>
           <p>
@@ -96,7 +103,7 @@ const Header = () => {
               <Icon size="big" name="facebook" /> Facebook
             </Button>
           </div>
-        </div>{" "}
+        </div>
       </div>
     </header>
   );
