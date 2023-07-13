@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Icon } from "semantic-ui-react";
 //import "./Header.scss";
 import "./Header.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.webp";
 
 const Header = () => {
   const scollEvent = (e) => {
@@ -57,7 +57,7 @@ const Header = () => {
         </div>
         {/*  Navbar */}
         <div className="message">
-          <h1>Dr Jorge Cancio & Asociados</h1>
+          <h1>Estudio Juridíco Dr Jorge Cancio & Asociados</h1>
           <p>
             En nuestro estudio jurídico, ofrecemos soluciones legales integrales
             y expertas para tus necesidades legales. Nuestro equipo de abogados

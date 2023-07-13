@@ -2,15 +2,15 @@ import React from "react";
 //import "./Footer.scss";
 import { Icon } from "semantic-ui-react";
 import "./footer.css";
-import logo from "../../assets/logo.png";
-import map from "../../assets/map.jpg";
+import logo from "../../assets/logo.webp";
+import map from "../../assets/map.webp";
 
 const Footer = () => {
   return (
     <footer>
       <div className="main-container">
         <div className="footer-navbar">
-          <img src={logo} alt={logo}></img>
+          <img src={logo} alt="Doctor Jorge Cancio del estudio juridico en don torcuato"></img>
           <div className="socials">
             <a className="follow-us" href="!#">
               Redes Sociales

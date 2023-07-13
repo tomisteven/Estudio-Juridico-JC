@@ -4,13 +4,13 @@ import SampleBox from "../utils/sample-box/Sample-box";
 import "./how.css"
 
 import hands from "../../assets/handshake.svg";
-import familia from "../../assets/familia.png";
-import penal from "../../assets/justicia.png";
-import daños from "../../assets/daños.png";
-import comercial from "../../assets/comercial.png";
-import laboral from "../../assets/laboral.png";
-import civil from "../../assets/civil.png";
-import jubilaciones from "../../assets/jubilacion.png";
+import familia from "../../assets/familia.webp";
+import penal from "../../assets/justicia.webp";
+import daños from "../../assets/daños.webp";
+import comercial from "../../assets/comercial.webp";
+import laboral from "../../assets/laboral.webp";
+import civil from "../../assets/civil.webp";
+import jubilaciones from "../../assets/jubilacion.webp";
 
 const HowItWork = () => {
   const boxDetails = [

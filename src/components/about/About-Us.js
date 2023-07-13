@@ -1,7 +1,7 @@
 import React from "react";
 //import './About-Us.scss'
 import "./about.css"
-import house from '../../assets/img_martillo.jpg'
+import house from '../../assets/img_martillo.webp'
 
 const AboutUs = () => {
   return (
@@ -9,7 +9,7 @@ const AboutUs = () => {
       <div className="dotted"></div>
       <div className="dotted dTwo"></div>
       <div className="dotted dThree"></div>
-      <h2 >Nosotros</h2>
+      <h2 >Sobre El Estudio Juridico Jorge Cancio</h2>
       <p className="about-phrase"></p>
       <div className="about-content">
 

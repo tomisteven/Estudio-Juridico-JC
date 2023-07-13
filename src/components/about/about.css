@@ -2,12 +2,12 @@
     position: relative;
     font-family: 'Muli', sans-serif;
     max-width: 1136px;
-    margin: 0px auto 139.25px auto;
+    margin: 150px auto 139.25px auto;
   }
 
   .about-container .dotted {
     position: absolute;
-    background-image: url('../../assets/dottedd.png');
+    background-image: url('../../assets/dottedd.webp');
     background-size: cover;
     top: 114px;
     left: -66px;

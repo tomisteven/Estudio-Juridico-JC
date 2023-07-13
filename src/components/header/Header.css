@@ -8,15 +8,15 @@
 }
 
 .round-pic {
-  width: 594px;
-  height: 594px;
+  width: 324px;
+  height: 524px;
   background-image: url("../../assets/logo.webp");
   background-size: cover;
   border-radius: 50%;
   background-position: center;
   position: absolute;
   top: 53px;
-  left: 837px;
+  left: 1037px;
   z-index: 1;
 }
 
@@ -27,7 +27,7 @@
   background-color: rgba(7, 114, 34, 0.267);
   opacity: 0.25;
   top: -83px;
-  left: 837px;
+  left: 937px;
   border-radius: 50%;
   z-index: 0;
 }
@@ -132,6 +132,7 @@
   font-size: 50px;
   line-height: 65px;
   font-weight: 500;
+  width: 800px;
   color: rgb(0, 0, 0);
 }
 

@@ -6,12 +6,12 @@ import { Button, Icon } from "semantic-ui-react";
 import Card from "../utils/card/card";
 import MainCard from "../utils/main-card/main-card";
 
-import bath01 from "../../assets/pitbulls.jpg";
-import acoso from "../../assets/acoso_ex.jpg";
+import bath01 from "../../assets/pitbulls.webp";
+import acoso from "../../assets/acoso_ex.webp";
 import leiva from "../../assets/leiva.webp";
-import user from "../../assets/mariacarmona.jpg";
-import acuña from "../../assets/acuña.jpg";
-import cariglino from "../../assets/cariglino.jpg";
+import user from "../../assets/mariacarmona.webp";
+import acuña from "../../assets/acuña.webp";
+import cariglino from "../../assets/cariglino.webp";
 
 const Properties = () => {
   const cards = [

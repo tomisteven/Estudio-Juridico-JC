@@ -3,8 +3,8 @@ import React from "react";
 import "./test.css";
 import TestimonialA from "../utils/testimonial/Testimonial-1";
 import TestimonialB from "../utils/testimonial/testimonial-2";
-import Profile01 from "../../assets/juncos.jpg";
-import Profile03 from "../../assets/rox.jpg";
+import Profile01 from "../../assets/juncos.webp";
+import Profile03 from "../../assets/rox.webp";
 
 const Testmonials = () => {
   const userArray = [

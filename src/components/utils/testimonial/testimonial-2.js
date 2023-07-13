@@ -1,6 +1,6 @@
 import React from 'react';
 import './testimonial-2.css'
-import profile from '../../../assets/jorge.jpg'
+import profile from '../../../assets/jorge.webp'
 import quote from '../../../assets/quote.svg'
 
 const TestimonialB  = () => {
