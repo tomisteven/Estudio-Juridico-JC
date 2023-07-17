@@ -9,7 +9,7 @@ export default function Articles() {
   const articles = [
     {
       id: 0,
-      title: "¿Para que sirve una declaratoria de 1 ?",
+      title: "¿Para que sirve una declaratoria de Herederos ?",
       description:
         "Cuando una persona fallece, se inicia la sucesion a fin de determinar quienes seran los herederos de esa persona o a fin de evaluar la validez del testamento.",
       description2:
@@ -21,13 +21,12 @@ export default function Articles() {
     },
     {
       id: 1,
-      title: "¿Para que sirve una declaratoria de 2 ?",
-      description:
-        "Cuando una persona fallece, se inicia la sucesion a fin de determinar quienes seran los herederos de esa persona o a fin de evaluar la validez del testamento.",
-      description2:
-        "Cuando culmina este proceso se dicta una sentencia de declaratoria de herederos la cual puede ser modificada posteriori en caso de aparecer otro heredero",
-      description3:
-        "La declaratoria de herederos es el paso previo al juicio sucesorio. Una vez terminado el trámite de la declaratoria, los herederos están capacitados para iniciar el juicio sucesorio o bien vender los bienes mediante lo que denomina “tracto abreviado”, en este caso, debe haber acuerdo unanime entre los herederos.",
+      title: "¿Se cumplen tus Derechos Laborales?",
+      descriptions: [
+        "Como trabajador tenes derecho a la desconexion digital contemplada en la ley 27.555. El empleador no podra contactar ni exigir la realizacion de tareas, por ningun medio, fuera de la jornada laboral.",
+        "Un empleo registrado implica un recibo de sueldom aportes y contribuciones, vacaciones, licencias por enfermedad o accidentes, aguiinaldo, indemnizacion por despido, etc. Si no estas registrado, no tenes estos derechos.",
+        "El trabajador no esta obligado a trabajar en dias feriados, salvo casos de peligro, accidente inminente de fuerza mayor o excepciones de la economia naciona o la empresa, juzgado su comportamiento en base a la colaboracion.",
+      ],
       img: article2,
       rating: 4,
     },

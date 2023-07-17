@@ -48,27 +48,27 @@ const Footer = () => {
               <ul>
                 <li>
                   {" "}
-                  <a href="!#"> Derecho Civil </a>{" "}
+                  <p href="!#"> Derecho Civil </p>{" "}
                 </li>
                 <li>
                   {" "}
-                  <a href="!#"> Derecho Penal </a>{" "}
+                  <p href="!#"> Derecho Penal </p>{" "}
                 </li>
                 <li>
                   {" "}
-                  <a href="!#"> Daños y Perjuicios </a>{" "}
+                  <p href="!#"> Daños y Perjuicios </p>{" "}
                 </li>
                 <li>
                   {" "}
-                  <a href="!#"> Jubilaciones </a>{" "}
+                  <p href="!#"> Jubilaciones </p>{" "}
                 </li>
                 <li>
                   {" "}
-                  <a href="!#"> Derecho Comercial </a>{" "}
+                  <p href="!#"> Derecho Comercial </p>{" "}
                 </li>
                 <li>
                   {" "}
-                  <a href="!#"> Derecho Laboral </a>{" "}
+                  <p href="!#"> Derecho Laboral </p>{" "}
                 </li>
               </ul>
             </div>
@@ -77,10 +77,10 @@ const Footer = () => {
                 <h3>Contacto</h3>
                 <ul>
                   <li>
-                    <a href="!#"> +54 11 5754-1353 </a>{" "}
+                    <p href="!#"> +54 11 5754-1353 </p>{" "}
                   </li>
                   <li>
-                    <a href="!#"> drcancio@hotmail.com </a>{" "}
+                    <p href="!#"> drcancio@hotmail.com </p>{" "}
                   </li>
                 </ul>
               </div>
@@ -89,10 +89,10 @@ const Footer = () => {
                 <ul>
                   <li>
                     {" "}
-                    <a href="!#">
+                    <p href="!#">
                       {" "}
                       Menendez y Pelayo, 1504, Don Torcuato{" "}
-                    </a>{" "}
+                    </p>{" "}
                   </li>
                 </ul>
               </div>
