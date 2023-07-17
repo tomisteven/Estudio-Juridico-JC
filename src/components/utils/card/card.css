@@ -1,9 +1,9 @@
 .card {
-    box-shadow: 0px 0px 10px #00000091;
+    box-shadow: 0px 0px 10px #00000035;
     font-family: "Muli", sans-serif;
     width: 260px;
     height: 450px;
-    background-color: #f6f6f6;
+    background-color: #ffffff;
     border-radius: 10px;
     overflow: auto;
     position: relative;
