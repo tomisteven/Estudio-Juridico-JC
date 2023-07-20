@@ -28,11 +28,11 @@
   .card .cont-btn-ver .btn-ver {
     padding-left: 7px;
     padding-right: 7px;
-    background-color: rgb(255, 178, 96);
+    background-color: rgb(22, 178, 32);
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     width: 100px;
     text-align: center;
     font-size: 12px;
@@ -137,5 +137,9 @@
     .card .card-content p{
       font-size: 13px;
       line-height: 20px;
+    }
+    .card-image {
+      width: 100%;
+      object-fit:cover  !important;
     }
   }

@@ -84,7 +84,7 @@ const Header = () => {
               icon="whatsapp"
               color="green"
               onClick={() =>
-                window.open("https://wa.me/1157541353?text=¡Hola!%20Queria%20agendar%20una%20cita%20con%20el%20Dr%20Cancio", "_blank")
+                window.open("https://wa.me/+5491157541353?text=¡Hola!%20Queria%20agendar%20una%20cita%20con%20el%20Dr%20Cancio", "_blank")
               }
             />
             <Button
