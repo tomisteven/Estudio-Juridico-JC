@@ -1,8 +1,9 @@
 import React from "react";
-import { Button} from "semantic-ui-react";
+import { Button } from "semantic-ui-react";
 //import "./Header.scss";
 import "./Header.css";
 import logo from "../../assets/logo.webp";
+import w from "../../assets/whatsapp.png";
 
 const Header = () => {
   const scollEvent = (e) => {
@@ -65,26 +66,30 @@ const Header = () => {
         </div>
         <div className="message">
           <h1>Estudio Juridíco Dr Jorge Cancio & Asociados</h1>
+          <h2>Este 2024 cumplimos con mas de 30 años de experiencia!</h2>
           <p>
             En nuestro estudio jurídico, ofrecemos soluciones legales integrales
             y expertas para tus necesidades legales. Nuestro equipo de abogados
             altamente calificados y experimentados está comprometido en
             brindarte asesoramiento legal personalizado y efectivo en una amplia
             gama de áreas legales. Desde derecho civil y penal hasta derecho
-            laboral y de familia, contamos con la experiencia necesaria para
-            representarte y proteger tus intereses. Nuestra pasión por la
+            laboral y de familia, contamos con 30 años de experiencia necesaria
+            para representarte y proteger tus intereses. Nuestra pasión por la
             justicia y la excelencia en el servicio al cliente nos distingue.
             Confía en nosotros para obtener resultados favorables. ¡Contáctanos
             hoy mismo para una consulta!
           </p>
           <div class="cont-butons">
-          <Button
+            <Button
               size=""
               className="btn-w"
               icon="whatsapp"
               color="green"
               onClick={() =>
-                window.open("https://wa.me/+5491157541353?text=¡Hola!%20Queria%20agendar%20una%20cita%20con%20el%20Dr%20Cancio", "_blank")
+                window.open(
+                  "https://wa.me/+5491157541353?text=¡Hola!%20Queria%20agendar%20una%20cita%20con%20el%20Dr%20Cancio",
+                  "_blank"
+                )
               }
             />
             <Button
@@ -109,15 +114,21 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <button
+        onClick={() =>
+          window.open(
+            "https://wa.me/+5491157541353?text=¡Hola!%20Queria%20agendar%20una%20cita%20con%20el%20Dr%20Cancio",
+            "_blank"
+          )
+        }
+        className="button-fixed"
+      >
+        {" "}
+        <img className="img-w" src={w} alt="" />
+        Urgencias 24 HS!
+      </button>
     </header>
   );
 };
 
 export default Header;
-
-/* onClick={() =>
-                window.open(
-                  "https://api.whatsapp.com/send?phone=+5491157541353&text=Hola!%20Quiero%20agendar%20una%20cita%20con%20el%20Dr.%20Cancio%20&%20Asociados",
-                  "_blank"
-                )
-              } */

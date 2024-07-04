@@ -76,8 +76,7 @@ export default function Articles() {
           card.classList.remove("article-active-rigth");
           setArticleActive(articles[0]);
         }, 800);
-        /* const btn = document.querySelector(".btn-articles-r");
-        btn.style.display = "none"; */
+
       } else {
         const card = document.querySelector(".card-articles");
         card.classList.add("article-active-rigth");
@@ -89,21 +88,6 @@ export default function Articles() {
     }
   };
 
-/* const handleArticle = (dir) => {
-    if (dir) {
-      if (articleActive.id === 0) {
-        setArticleActive(articles[articles.length - 1]);
-      } else {
-        setArticleActive(articles[articleActive.id - 1]);
-      }
-    } else {
-      if (articleActive.id === articles.length) {
-        setArticleActive(articles[0]);
-      } else {
-        setArticleActive(articles[articleActive.id + 1]);
-      }
-    }
-  }; */
 
 
   return (
@@ -142,12 +126,7 @@ export default function Articles() {
             })}
 
             <div class="footer-card">
-              <Icon
-                className="icon-articles-p"
-                name="phone"
-                color="red"
-                size="tiny"
-              />
+
               <p className="p-footer">{articleActive.mensaje}</p>
               <Rating
                 className="star-bottom"
@@ -163,9 +142,6 @@ export default function Articles() {
         <button className="btn-articles-r" onClick={() => handleArticle(false)}>
           <Icon name="arrow right" color="green" size="big" />
         </button>
-        {/* <Button className="btn-articles" onClick={() => handleArticle(false)}>
-          <Icon color="green" name="arrow right" size="small" />
-        </Button> */}
       </div>
     </section>
   );

@@ -6,7 +6,47 @@
   margin: 0 auto;
   overflow: hidden;
 }
+.button-fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 168px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(77, 192, 77);
+  height: 45px;
+  padding-left: 10px;
+  padding-right: 10px;
+  opacity: 0.9;
 
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.326);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  animation: saltar 2s infinite;
+}
+
+@keyframes saltar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.img-w {
+  width: 30px;
+  height: 30px;
+}
 .round-pic {
   width: 324px;
   height: 524px;
@@ -37,7 +77,7 @@
   justify-content: space-between;
   margin-top: 38px;
 }
-.header-scroll{
+.header-scroll {
   position: fixed;
   top: -40px;
   left: 0;
@@ -54,7 +94,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.links-color{
+.links-color {
   font-family: "Muli", sans-serif;
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -107,8 +147,6 @@
   font-weight: 700;
 }
 
-
-
 .header-navbar .top-bar .links a:last-of-type {
   margin-right: 0;
 }
@@ -122,7 +160,7 @@
 
 .message {
   margin-top: 78px;
-  width: 598px;
+  width: 625px;
   margin-bottom: 66px;
 }
 
@@ -134,6 +172,11 @@
   font-weight: 500;
   width: 800px;
   color: rgb(0, 0, 0);
+}
+
+.message h2 {
+  border-bottom: 2px solid rgb(0, 82, 0);
+  padding-bottom: 5px;
 }
 
 .message p {
@@ -277,14 +320,14 @@
     right: -5px;
     margin-left: 5px;
   }
-  .btn-w{
+  .btn-w {
     position: relative;
     right: 5px;
     margin-left: 15px;
   }
-  .btn-f{
+  .btn-f {
     position: relative;
-left:  15px;
+    left: 15px;
   }
   .cont-butons {
     width: 60%;

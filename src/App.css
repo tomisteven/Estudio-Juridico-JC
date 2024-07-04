@@ -17,17 +17,14 @@ html,
 
 body {
   background-color: black;
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", sans-serif;
 }
-
-
 
 @media only screen and (min-width: 320px) and (max-width: 520px) {
   .site-container {
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
     width: 90%;
     margin: auto;
   }
 }
-
