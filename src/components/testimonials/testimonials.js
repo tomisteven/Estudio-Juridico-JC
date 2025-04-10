@@ -21,8 +21,8 @@ const Testmonials = () => {
     },
     {
       photo: Profile03,
-      name: "Dr. Roxana Pawluszec",
-      esp: ["- Derecho Civil", "- Derecho Laboral"],
+      name: "Roxana C. Pawluszek",
+      esp: ["- Derecho Civil", "- Derecho Laboral", "-Violencia de Género", "Derecho Penal"],
       text: "La verdad prevalecerá: defendemos sus derechos y buscamos la verdad.",
     },
   ];
