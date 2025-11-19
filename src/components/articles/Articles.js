@@ -41,7 +41,7 @@ const ArticleCard = ({ article, isActive }) => {
         flexDirection: "row",
         width: "100%",
         maxWidth: "1100px",
-        height: "550px",
+        height: "600px",
         backgroundColor: "white",
         borderRadius: "24px",
         overflow: "hidden",

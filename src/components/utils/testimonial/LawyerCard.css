@@ -1,0 +1,440 @@
+/* =============================================
+   LAWYER CARD - MODERN DESIGN
+   ============================================= */
+
+.lawyer-card {
+    position: relative;
+    background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow:
+        0 10px 40px rgba(0, 82, 0, 0.08),
+        0 2px 8px rgba(0, 82, 0, 0.04);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    border: 1px solid rgba(0, 82, 0, 0.1);
+}
+
+.lawyer-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #005200 0%, #027e02 50%, #4dc04d 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.lawyer-card:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 20px 60px rgba(0, 82, 0, 0.15),
+        0 4px 16px rgba(0, 82, 0, 0.08);
+}
+
+.lawyer-card:hover::before {
+    opacity: 1;
+}
+
+/* =============================================
+   FEATURED CARD VARIANT
+   ============================================= */
+
+.lawyer-card-featured {
+    background: linear-gradient(145deg, #ffffff 0%, #f0fdf4 100%);
+    border: 2px solid rgba(2, 126, 2, 0.2);
+    box-shadow:
+        0 20px 60px rgba(0, 82, 0, 0.15),
+        0 4px 16px rgba(0, 82, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.lawyer-card-featured::before {
+    opacity: 1;
+    height: 5px;
+}
+
+.lawyer-card-featured:hover {
+    transform: scale(1.02);
+    box-shadow:
+        0 30px 80px rgba(0, 82, 0, 0.2),
+        0 8px 24px rgba(0, 82, 0, 0.12);
+}
+
+/* =============================================
+   GLOW EFFECT
+   ============================================= */
+
+.card-glow {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(77, 192, 77, 0.15) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    pointer-events: none;
+}
+
+.lawyer-card:hover .card-glow {
+    opacity: 1;
+}
+
+.lawyer-card-featured .card-glow {
+    opacity: 0.5;
+}
+
+/* =============================================
+   CARD CONTENT
+   ============================================= */
+
+.card-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+/* =============================================
+   PHOTO SECTION
+   ============================================= */
+
+.photo-container {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 8px;
+}
+
+.lawyer-card-featured .photo-container {
+    width: 200px;
+    height: 200px;
+}
+
+.photo-ring {
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    right: -12px;
+    bottom: -12px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #005200 0%, #027e02 50%, #4dc04d 100%);
+    opacity: 0.15;
+    transition: all 0.4s ease;
+    animation: pulse-ring 3s ease-in-out infinite;
+}
+
+@keyframes pulse-ring {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.15;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 0.25;
+    }
+}
+
+.lawyer-card:hover .photo-ring {
+    opacity: 0.3;
+    transform: scale(1.1);
+}
+
+.lawyer-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.12),
+        0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+}
+
+.lawyer-card:hover .lawyer-photo {
+    box-shadow:
+        0 12px 32px rgba(0, 82, 0, 0.2),
+        0 4px 12px rgba(0, 82, 0, 0.12);
+}
+
+.featured-badge {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #d28323 0%, #f59e0b 100%);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 6px 16px;
+    border-radius: 20px;
+    box-shadow:
+        0 4px 12px rgba(210, 131, 35, 0.3),
+        0 2px 4px rgba(210, 131, 35, 0.2);
+    white-space: nowrap;
+}
+
+/* =============================================
+   INFO SECTION
+   ============================================= */
+
+.info-container {
+    width: 100%;
+    text-align: center;
+}
+
+.lawyer-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 8px 0;
+    line-height: 1.3;
+}
+
+.lawyer-card-featured .lawyer-name {
+    font-size: 28px;
+}
+
+.lawyer-role {
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #027e02;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 8px 0;
+}
+
+.lawyer-university {
+    font-family: 'Muli', sans-serif;
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+    margin: 0 0 20px 0;
+}
+
+/* =============================================
+   QUOTE SECTION
+   ============================================= */
+
+.quote-container {
+    position: relative;
+    background: linear-gradient(135deg, rgba(0, 82, 0, 0.03) 0%, rgba(77, 192, 77, 0.03) 100%);
+    border-left: 3px solid #027e02;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 20px 0;
+}
+
+.quote-icon {
+    width: 32px;
+    height: 32px;
+    color: #027e02;
+    opacity: 0.3;
+    margin-bottom: 8px;
+}
+
+.lawyer-quote {
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #444;
+    font-style: italic;
+    margin: 0;
+}
+
+.lawyer-card-featured .lawyer-quote {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+/* =============================================
+   SPECIALTIES SECTION
+   ============================================= */
+
+.specialties-container {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.specialties-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0 0 12px 0;
+}
+
+.specialties-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.specialty-badge {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Muli', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #005200;
+    background: linear-gradient(135deg, rgba(77, 192, 77, 0.1) 0%, rgba(2, 126, 2, 0.1) 100%);
+    border: 1px solid rgba(0, 82, 0, 0.2);
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.specialty-badge:hover {
+    background: linear-gradient(135deg, #4dc04d 0%, #027e02 100%);
+    color: #ffffff;
+    border-color: #027e02;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 82, 0, 0.2);
+}
+
+/* =============================================
+   CORNER DECORATION
+   ============================================= */
+
+.corner-decoration {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, rgba(77, 192, 77, 0.05) 0%, transparent 100%);
+    border-radius: 0 20px 0 100%;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.lawyer-card:hover .corner-decoration {
+    opacity: 1;
+}
+
+/* =============================================
+   RESPONSIVE - TABLET
+   ============================================= */
+
+@media only screen and (min-width: 521px) and (max-width: 1024px) {
+    .lawyer-card {
+        padding: 32px;
+    }
+
+    .photo-container {
+        width: 140px;
+        height: 140px;
+    }
+
+    .lawyer-card-featured .photo-container {
+        width: 180px;
+        height: 180px;
+    }
+
+    .lawyer-name {
+        font-size: 22px;
+    }
+
+    .lawyer-card-featured .lawyer-name {
+        font-size: 26px;
+    }
+}
+
+/* =============================================
+   RESPONSIVE - MOBILE
+   ============================================= */
+
+@media only screen and (min-width: 320px) and (max-width: 520px) {
+    .lawyer-card {
+        padding: 28px 20px;
+        border-radius: 20px;
+    }
+
+    .lawyer-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .photo-container {
+        width: 120px;
+        height: 120px;
+    }
+
+    .lawyer-card-featured .photo-container {
+        width: 160px;
+        height: 160px;
+    }
+
+    .lawyer-name {
+        font-size: 20px;
+    }
+
+    .lawyer-card-featured .lawyer-name {
+        font-size: 24px;
+    }
+
+    .lawyer-role {
+        font-size: 12px;
+    }
+
+    .lawyer-university {
+        font-size: 12px;
+    }
+
+    .quote-container {
+        padding: 16px 18px;
+        margin: 16px 0;
+    }
+
+    .quote-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .lawyer-quote {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .lawyer-card-featured .lawyer-quote {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .specialties-title {
+        font-size: 13px;
+    }
+
+    .specialty-badge {
+        font-size: 11px;
+        padding: 5px 12px;
+    }
+
+    .featured-badge {
+        font-size: 10px;
+        padding: 5px 12px;
+    }
+
+    .corner-decoration {
+        width: 40px;
+        height: 40px;
+    }
+}
