@@ -16,8 +16,10 @@ const TestimonialA = ({ photo, name, esp, text }) => {
       </div>
 
       <p className="name">{name}</p>
-      {esp.map((e) => (
-        <p className="position">{e}</p>
+      {esp.map((e, index) => (
+        <p key={`${name}-${index}`} className="position">
+          {e}
+        </p>
       ))}
     </div>
   );

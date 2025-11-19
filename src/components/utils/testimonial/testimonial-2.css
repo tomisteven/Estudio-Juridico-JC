@@ -1,6 +1,8 @@
 .testimonial-container {
-  width: 477px;
-  height: 400px;
+  width: 100%;
+  max-width: 477px;
+  min-height: 400px;
+  margin: 0 auto;
 }
 .text-container .quote{
   width: 60px;
