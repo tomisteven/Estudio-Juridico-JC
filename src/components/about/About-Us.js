@@ -9,12 +9,12 @@ const AboutUs = () => {
       <div className="dotted"></div>
       <div className="dotted dTwo"></div>
       <div className="dotted dThree"></div>
-      <h2>Sobre El Estudio Juridico Jorge Cancio</h2>
+      <h1>Sobre El Estudio Juridico Jorge Cancio</h1>
       <p className="about-phrase"></p>
       <div className="about-content">
         <img className="about-image" src={house} alt="main-house" />
         <div className="about-p">
-          <h3>Soluciones Integrales</h3>
+          <h1>Soluciones Integrales</h1>
           <p>
             En nuestro estudio jurídico en Argentina, nos especializamos en
             brindar soluciones legales integrales y personalizadas. Nuestro
