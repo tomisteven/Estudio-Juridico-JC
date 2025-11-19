@@ -190,6 +190,17 @@
   color: gray;
 }
 
+.message .inline-link {
+  color: #3056d3;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.message .inline-link:hover,
+.message .inline-link:focus {
+  color: #17349b;
+}
+
 .button {
   position: relative;
   top: 30px;

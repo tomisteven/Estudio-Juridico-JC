@@ -65,7 +65,9 @@ const Header = () => {
           </div>
         </div>
         <div className="message">
-          <h1>Estudio Juridíco Dr Jorge Cancio & Asociados</h1>
+          <h1>
+            Estudio Jurídico en Don Torcuato · Dr. Jorge Cancio &amp; Asociados
+          </h1>
           <h2>Este 2024 cumplimos con mas de 30 años de experiencia!</h2>
           <p>
             En nuestro estudio jurídico, ofrecemos soluciones legales integrales
@@ -76,8 +78,11 @@ const Header = () => {
             laboral y de familia, contamos con 30 años de experiencia necesaria
             para representarte y proteger tus intereses. Nuestra pasión por la
             justicia y la excelencia en el servicio al cliente nos distingue.
-            Confía en nosotros para obtener resultados favorables. ¡Contáctanos
-            hoy mismo para una consulta!
+            Confía en nosotros para obtener resultados favorables y{" "}
+            <a className="inline-link" href="#contacto">
+              reservá tu consulta hoy mismo
+            </a>
+            .
           </p>
           <div class="cont-butons">
             <Button

@@ -110,6 +110,17 @@ footer {
   margin-bottom: 0;
 }
 
+.footer-link {
+  color: var(--gray1);
+  text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
 .options .menu .popular {
   width: 250px;
 }

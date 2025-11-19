@@ -62,7 +62,13 @@ const Properties = () => {
   return (
     <div id="casos" className="properties-container">
       <h2> Casos Mediaticos </h2>
-      <p> </p>
+      <p className="properties-description">
+        Conocé algunos de los expedientes más resonantes que defendimos y{" "}
+        <a className="properties-link" href="#contacto">
+          contactanos para analizar tu caso
+        </a>
+        .
+      </p>
       <div className="cards-container">
         <MainCard />
         {cards.map((card) => (

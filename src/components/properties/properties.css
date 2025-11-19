@@ -24,6 +24,21 @@
     text-align: center;
   }
 
+  .properties-description {
+    font-weight: 500;
+    color: #333333;
+  }
+
+  .properties-link {
+    color: #3056d3;
+    text-decoration: underline;
+  }
+
+  .properties-link:hover,
+  .properties-link:focus {
+    color: #17349b;
+  }
+
   .properties-container .cards-container {
     margin-top: 50px;
     width: 100%;

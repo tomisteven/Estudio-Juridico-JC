@@ -37,6 +37,17 @@ const AboutUs = () => {
             respaldados por un equipo experimentado, nuestro estudio jurídico
             está listo para ofrecerte la mejor asesoría y representación.
           </p>
+          <p className="about-link-wrapper">
+            Conocé en detalle nuestras{" "}
+            <a className="about-link" href="#esp">
+              especializaciones clave
+            </a>{" "}
+            y revisá{" "}
+            <a className="about-link" href="#casos">
+              los casos mediáticos que defendimos
+            </a>{" "}
+            para entender cómo podemos acompañarte.
+          </p>
         </div>
         <div className="blue-border"></div>
       </div>

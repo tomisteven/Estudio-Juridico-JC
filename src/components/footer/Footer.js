@@ -7,12 +7,12 @@ import map from "../../assets/map.webp";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id="contacto">
       <div className="main-container">
         <div className="footer-navbar">
           <img src={logo} alt="Doctor Jorge Cancio del estudio juridico en don torcuato"></img>
           <div className="socials">
-            <a className="follow-us" href="!#">
+            <a className="follow-us" href="#contacto">
               Redes Sociales
             </a>
             <div className="media">
@@ -47,28 +47,22 @@ const Footer = () => {
               <h3>Especilizaciones</h3>
               <ul>
                 <li>
-                  {" "}
-                  <p href="!#"> Derecho Civil </p>{" "}
+                  <a href="#esp">Derecho Civil</a>
                 </li>
                 <li>
-                  {" "}
-                  <p href="!#"> Derecho Penal </p>{" "}
+                  <a href="#esp">Derecho Penal</a>
                 </li>
                 <li>
-                  {" "}
-                  <p href="!#"> Daños y Perjuicios </p>{" "}
+                  <a href="#esp">Daños y Perjuicios</a>
                 </li>
                 <li>
-                  {" "}
-                  <p href="!#"> Jubilaciones </p>{" "}
+                  <a href="#esp">Jubilaciones</a>
                 </li>
                 <li>
-                  {" "}
-                  <p href="!#"> Derecho Comercial </p>{" "}
+                  <a href="#esp">Derecho Comercial</a>
                 </li>
                 <li>
-                  {" "}
-                  <p href="!#"> Derecho Laboral </p>{" "}
+                  <a href="#esp">Derecho Laboral</a>
                 </li>
               </ul>
             </div>
@@ -77,10 +71,14 @@ const Footer = () => {
                 <h3>Contacto</h3>
                 <ul>
                   <li>
-                    <p href="!#"> +54 11 5754-1353 </p>{" "}
+                    <a className="footer-link" href="tel:+541157541353">
+                      +54 11 5754-1353
+                    </a>
                   </li>
                   <li>
-                    <p href="!#"> drcancio@hotmail.com </p>{" "}
+                    <a className="footer-link" href="mailto:drcancio@hotmail.com">
+                      drcancio@hotmail.com
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -88,11 +86,14 @@ const Footer = () => {
                 <h3>Ubicacion</h3>
                 <ul>
                   <li>
-                    {" "}
-                    <p href="!#">
-                      {" "}
-                      Menendez y Pelayo, 1504, Don Torcuato{" "}
-                    </p>{" "}
+                    <a
+                      className="footer-link"
+                      href="https://goo.gl/maps/r383EhBJgmErtzyi6"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Menendez y Pelayo 1504, Don Torcuato
+                    </a>
                   </li>
                 </ul>
               </div>
