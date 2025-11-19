@@ -116,7 +116,7 @@ const ArticleCard = ({ article, isActive }) => {
             position: "absolute",
             bottom: "24px",
             left: "24px",
-            backgroundColor: "#3056d3",
+            backgroundColor: "#199e2bff",
             color: "white",
             padding: "10px 20px",
             borderRadius: "10px",
@@ -220,7 +220,7 @@ const ArticleCard = ({ article, isActive }) => {
               borderRadius: "12px",
             }}
           >
-            <Phone size={20} color="#3056d3" />
+            <Phone size={20} color="#199e2bff" />
             <p
               style={{
                 margin: 0,
@@ -250,7 +250,7 @@ const ArticleCard = ({ article, isActive }) => {
                 alignItems: "center",
                 gap: "8px",
                 padding: "12px 24px",
-                backgroundColor: "#3056d3",
+                backgroundColor: "#199e2bff",
                 color: "white",
                 border: "none",
                 borderRadius: "10px",
@@ -349,6 +349,7 @@ export default function Articles() {
         backgroundColor: "#fafafa",
         padding: "150px 0",
         minHeight: "100vh",
+        marginTop: "-155px",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -391,10 +392,10 @@ export default function Articles() {
             marginBottom: "20px",
           }}
         >
-          <BookOpen size={18} color="#3056d3" />
+          <BookOpen size={18} color="#199e2bff" />
           <span
             style={{
-              color: "#3056d3",
+              color: "#199e2bff",
               fontSize: "14px",
               fontWeight: "600",
               textTransform: "uppercase",
@@ -518,7 +519,7 @@ export default function Articles() {
         >
           <ChevronRight
             size={28}
-            color="#27ae60"
+            color="#199e2bff"
             style={{ transition: "color 0.3s ease" }}
           />
         </button>
@@ -549,7 +550,7 @@ export default function Articles() {
               width: currentIndex === index ? "40px" : "12px",
               height: "12px",
               borderRadius: "6px",
-              backgroundColor: currentIndex === index ? "#3056d3" : "#d1d5db",
+              backgroundColor: currentIndex === index ? "#199e2bff" : "#d1d5db",
               border: "none",
               cursor: "pointer",
               transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
